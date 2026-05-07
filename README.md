@@ -1,5 +1,5 @@
-# Fronted Practice Projects
-A collection of HTML/CSS practice projects build while learning fronted development.
+# Frontend Practice Projects
+A collection of HTML/CSS practice projects build while learning frontend development.
 
 ## Projects included
 Bookshop Page
