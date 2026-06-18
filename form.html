@@ -4,59 +4,226 @@
 <head>
     <meta charset="UTF-8" />
     <title>Survey Form</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: poppins, sans-serif;
+            background-color: midnightblue;
+            color: whitesmoke;
+        }
+
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            justify-content: center;
+            background-color: skyblue;
+            min-height: 100vh;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            background-color: darkslateblue;
+            outline: 2px solid midnightblue;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: 20px auto;
+
+        }
+        h1::before {
+            content: "🌿 "
+        }
+        h1::after {
+            content: " ✨"
+        }
+        .header:hover {
+            background-color: orangered;
+            transition: background-color 0.3s
+            
+
+        }
+
+        .header:active {
+            background-color: blueviolet;
+            border-radius: 50px;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .form1 {
+            background-color: darkslateblue;
+            padding: 20px;
+            border-radius: 10px;
+                outline: 2px solid midnightblue;
+                max-width: 400px;
+                width: 100%;
+
+
+        }
+        .form1 input {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+        .form1 label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .form1 input:focus {
+            outline: 2px solid orangered;
+        }
+        .form1 input:invalid {
+            border: 2px solid red;
+        }
+        .form1 input:valid {
+            border: 2px solid green;
+        }
+        .form1 input:hover {
+            background-color: lightgray;
+            transition: background-color 0.3s;
+        }
+        .form1 input:active {
+            background-color: darkgray;
+            border-radius: 50px;
+        }
+
+        .form1:hover {
+            background-color: black;
+            transition: background-color 0.3s;
+            border-radius: 50px;
+        }
+        .form1:focus-within {
+            outline: 2px solid blueviolet;
+        }
+        
+        .select select {
+            padding: 20px;
+            border: none;
+            border-radius: 5px;
+            width: 200px;
+            margin-top: 10px;
+        }
+        .radios input, label {
+            margin-right: 10px;
+            color: black;
+        }
+        .checkbox input,label {
+            margin-right: 10px;
+            color: black;
+        }
+        textarea {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            width: 100%;
+        }
+        #submit {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: blueviolet;
+            color: white;
+            cursor: pointer;
+        }
+
+        #submit:hover {
+            background-color: darkorange;
+            transition: background-color 0.3s;
+        }
+
+        #submit:active {
+            background-color: purple;
+            border-radius: 50px;
+        }
+
+
+
+    </style>
 </head>
 
 <body>
-    <h1 id="title"> Survey Form Project</h1>
-    <p id="description">
-        This is a survey form project to practice HTML form elements and attributes. Please fill out the form below and submit your responses.
-    </p>
-    <form id="survey-form">
-        <input type="text" id="name" placeholder="elphas okoth" required />
-        <label for="name" id="name-label">Name Label</label> <br>
+    <div class="container">
+        <div class="header">
+            <h1> Survey Form Project</h1>
+            <p id="description">
+                This is a survey form project to practice HTML form elements and attributes. Please fill out the form below and
+                submit your responses.</p>
 
-        <input type="email" id="email" required placeholder="elphasokoth54@gmail.com" />
-        <label for="email" id="email-label">Email Label</label><br>
-
-        <input type="number" id="number" placeholder="07007237" max="10" min="7" required />
-        <label for="number" id="number-label">Number Label</label><br>
-
-        <select id="dropdown">
-            <option>Nairobi
-            <option>
-            <option>Kisumu
-            <option>
-            <option>Nakuru
-            <option>
-        </select> <br>
-        <input type="radio" id="big" name="cow" value="big" />
-        <label for="big"></label>
-        <input type="radio" id="white" value="white" name="cow">
-        <label for="white">White</label>
-        <input type="radio" id="green" value="green" name="cow">
-        <labe for="green">Green</label>
-
-            <input type="radio" id="small" name="cow" value="small" />
-            <labe for="small">Small</label>
-                <input type="radio" id="black" value="black" name="cow">
-                <label for="black">Black</label>
-                <input type="radio" id="yellow" value="yellow" name="cow">
-                <label for="yellow">Yellow</label><br>
-
-
-                <input type="checkbox" id="topping" value="pinaple">
-                <label for="topping">Pinaple</label>
-                <input type="checkbox" id="fruits" value="avocados">
-                <label for="fruits">Avocados</label>
-                <input type="checkbox" id="vegatable" value="kales">
-                <label for="vegatable">Kales</label>
-                <input type="checkbox" id="juice" value="mango">
-                <label for="juice">Mango</label><br>
-
-                <textarea id="comments" name="entry" rows="10" cols="30">Comments</textarea>
-                <button id="submit">Submit</button>
-
-    </form>
+        </div>
+        <div class="form">
+            <form id="survey-form">
+                <div class="form1">
+                    <input type="text" id="name" placeholder="elphas okoth" required />
+                    <label for="name" id="name-label">Name Label</label> <br>
+            
+                    <input type="email" id="email" required placeholder="elphasokoth54@gmail.com" />
+                    <label for="email" id="email-label">Email Label</label><br>
+            
+                    <input type="number" id="number" placeholder="07007237" max="10" min="7" required />
+                    <label for="number" id="number-label">Number Label</label><br>
+                </div>
+                <div class="select">
+                    <select id="dropdown">
+                        <option>Nairobi</option>
+                        <option>Kisumu</option>
+                        <option>Nakuru</option>
+                    </select>
+                </div>
+                <br>
+                <div class="radios">
+                    <input type="radio" id="big" name="cow" value="big" />
+                    <label for="big">big</label>
+                    <input type="radio" id="white" value="white" name="cow">
+                    <label for="white">White</label>
+                    <input type="radio" id="green" value="green" name="cow">
+                    <label for="green">Green</label>
+            
+                        <input type="radio" id="small" name="cow" value="small" />
+                        <labe for="small">Small</label>
+                            <input type="radio" id="black" value="black" name="cow">
+                            <label for="black">Black</label>
+                            <input type="radio" id="yellow" value="yellow" name="cow">
+                            <label for="yellow">Yellow</label><br>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="topping" value="pinaple">
+                    <label for="topping">Pinaple</label>
+                    <input type="checkbox" id="fruits" value="avocados">
+                    <label for="fruits">Avocados</label>
+                    <input type="checkbox" id="vegatable" value="kales">
+                    <label for="vegatable">Kales</label>
+                    <input type="checkbox" id="juice" value="mango">
+                    <label for="juice">Mango</label><br>
+                </div>
+                <br>
+                <div>
+                    <textarea id="comments" name="entry" rows="10" cols="30">Comments</textarea>
+                    <button id="submit">Submit</button>
+                </div>
+            
+            </form>
+        </div>
+    </div>
+   
+    
 </body>
 
 </html>

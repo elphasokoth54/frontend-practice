@@ -5,27 +5,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie Review</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            color: white;
+            background-color: black;
+            width: 800px;
+            line-height: 1.7;
+
+
+        }
+
+        .grid1 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+            
+        }
+
+        .changed {
+            grid-row: 2/3;
+            grid-column: 1/2;
+        }
+
+
+    </style>
 </head>
 
 <body>
     <main>
         <h1>Heartstopper</h1>
-        <img src="https://cdn.freecodecamp.org/curriculum/labs/rise-beyond-2.png"
-            alt="rise bay with yellow background and a man standing with guitar" />
-        <p>This is the movie of school student boys and girls who study in different school but share co-caricculum
-            activities in one field.Tow boys are protagonies where one knows his status as abisexual but one still is
-            not sure.</p>
-        <p><strong>Movie Rating</strong><span aria-hidden="true">⭐⭐⭐⭐⭐⭐⭐⭐⭐☆</span> (9/10)</p>
+        <div class="grid1">
+    
+               
+            <div>
+                <p>This is the movie of school student boys and girls who study in different school but share co-caricculum activities
+                    in one field.Tow boys are protagonies where one knows his status as abisexual but one still is not sure.</p>
+                <p><strong>Movie Rating</strong><span aria-hidden="true">⭐⭐⭐⭐⭐⭐⭐☆☆☆</span> (9/10)</p>
+                    
+            </div>
+            <img src="https://cdn.freecodecamp.org/curriculum/labs/rise-beyond-2.png"
+                alt="rise bay with yellow background and a man standing with guitar" />
+            
+            <div>
+                <h2>Cast Members</h2>
+                <ul>
+                    <li><strong>Jonh Poul</strong> as Willies</li>
+                    <li><strong>Stainbeck Hug</strong> as Pound Lee</li>
+                    <li><strong>Daniel Livingstone</strong> as Papp Jey</li>
+                    <li><strong>George Guy</strong> as Lovyguard</li>
+                    <li><strong>Stonecosto Paw</strong> as Smith John</li>
+                    <li><strong>Buoy Lieud</strong> as James Fine</li>
+            </div>
+            <div class="changed">
+                <h2>My opinion</h2>
+                <p>My opinion about how ladiers sgould behave in a good way include:</p>
+                <ul>
+                    <li>They should be indipendent</li>
+                    <li>by not requesting money from there boy friends that take them as baggers</li>
+                    <li>dress well even if it is matumbas from Kikomba </li>
+                </ul>
+            </div>
+        
+            
+            
 
-        <h2>Cast Members</h2>
-        <ul>
-            <li><strong>Jonh Poul</strong> as Willies</li>
-            <li><strong>Stainbeck Hug</strong> as Pound Lee</li>
-            <li><strong>Daniel Livingstone</strong> as Papp Jey</li>
-            <li><strong>George Guy</strong> as Lovyguard</li>
-            <li><strong>Stonecosto Paw</strong> as Smith John</li>
-            <li><strong>Buoy Lieud</strong> as James Fine</li>
-
+        </div>
+        
         </ul>
     </main>
 

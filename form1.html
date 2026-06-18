@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Job Application Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name">Full Name: </label>
+                <input class="bmw" id="name" type="text" name="name" required placeholder="E.g., Yvone Rainny" />
+
+                <label for="email">Email: </label>
+                    <input class="bmw" id="email" type="email" name="email" required
+                        placeholder="E.g., yvoner54@gmail.com" />
+            </fieldset>
+            <fieldset>
+                <legend>Job Details</legend>
+                <label for="position">Job Position: </label>
+                <select id="position" class="job-position">
+                    <option>Senior Manager</option>
+                    <option selected>Managing Director</option> 
+                    <option>HR Co-ordinator</option>
+                    <option>Senior Secretary</option>
+
+                </select>
+            </fieldset>
+            <fieldset class="radio-group">
+                <legend>Availability</legend>
+                <input id="full-time" type="radio" name="availability" />
+                <label class="radio" for="full-time">Full-Time: </label>
+
+                <input id="part-time" type="radio" name="availability" />
+                <label class="radio" for="part-time">Part-Time: </label>
+
+            </fieldset>
+            <fieldset>
+                <legend>Comment</legend>
+                <label for="message">Message as any time</label>
+                <textarea class="bmw" id="message"></textarea>
+            </fieldset>
+            <button type="submit" class="btn">Submit</button>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
